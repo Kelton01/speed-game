@@ -27,7 +27,7 @@ def startGame():
 	elapsed = 0
 	level = 2
 
-	while level < 11:
+	while level <= 10:
 		button = GPIO.input(32)
 		elapsed = time.time() - initial_time
 		if elapsed % (7/level) >= (0/level) and elapsed % (7/level) <= (1/level):
